@@ -96,7 +96,7 @@ elif requested > limit:
     print(f"Ошибка: можно сгенерировать не более {limit} пословиц.")
     exit()
 
-results = []
+results: list[str] = []
 
 while len(results) < requested:
     proverb = random.choice(proverbs)
